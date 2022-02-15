@@ -4,4 +4,15 @@ An implementation of homomorphic encryption scheme in c++ using the pallisade li
 
 This project is made for educational purposes to learn the various functions present in the pallisade FHE library and using it to make a server based application that takes in user input as vectors and performs certain computaions/bit shifts on encrypted data where the user specifies the action to be performed.
 
-For installing pallisade first install docker in your system then run the dockerfile given above
+For installing pallisade first [install docker](https://docs.docker.com/engine/install/) in your system then run the dockerfile given above
+
+For running the docker file execute the following commands stepwise:
+
+> ***It will take some time for the docker image to be built please be patient :)***
+
+```
+sudo docker build -t encrypted-operations .`
+```
+```
+sudo docker run -d -p 1221:1221 --rm encrypted-operations
+```
