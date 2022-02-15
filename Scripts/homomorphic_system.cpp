@@ -134,26 +134,26 @@ public:
 //################################################################################################
 //########################################## MAIN() ##############################################
 
-// int main() {
+int main() {
 
-//   vector<int64_t> msgvector = {1,2,3,4,5,6,7,8,9,10};
-//   vector<int64_t> operandVector = {-1,-2,3,4,5,6,7,8,10,9};
+  vector<int64_t> msgvector = {1,2,3,4,5,6,7,8,9,10};
+  vector<int64_t> operandVector = {-1,-2,3,4,5,6,7,8,10,9};
 
-//   char operation = '+';
-//   int samt = 1;
+  char operation = '+';
+  int samt = 1;
 
-//   homomorphic_system obj;
+  homomorphic_system obj;
 
-//   CryptoContext<DCRTPoly> cryptoContext = obj.genCC();
-//   LPKeyPair<DCRTPoly> keyPair = obj.genKeys(cryptoContext);
-//   obj.genCiphertexts(msgvector, keyPair, cryptoContext);
-//   obj.copmute(, cryptoContext, operation, samt, operandVector);
+  CryptoContext<DCRTPoly> cryptoContext = obj.genCC();
+  LPKeyPair<DCRTPoly> keyPair = obj.genKeys(cryptoContext);
+  obj.genCiphertexts(msgvector, keyPair, cryptoContext);
+  obj.copmute(, cryptoContext, operation, samt, operandVector);
 
-//   std::cout << "\n\nResults of homomorphic computations" << std::endl;
-//   std::cout << "\nct + ov: " <<  obj.decrypt(keyPair, cryptoContext) << std::endl;
+  std::cout << "\n\nResults of homomorphic computations" << std::endl;
+  std::cout << "\nct + ov: " <<  obj.decrypt(keyPair, cryptoContext) << std::endl;
 
-//   return 0;
-// }
+  return 0;
+}
 
 //#################################------------------------------####################################
 //################################--------------------------------###################################
