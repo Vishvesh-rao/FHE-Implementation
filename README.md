@@ -10,9 +10,9 @@ For running the docker file execute the following commands stepwise:
 
 > ***It will take some time for the docker image to be built please be patient :)***
 
+```bash
+sudo docker build -t encrypted-operations .
 ```
-sudo docker build -t encrypted-operations .`
-```
-```
+```bash
 sudo docker run -d -p 1221:1221 --rm encrypted-operations
 ```
