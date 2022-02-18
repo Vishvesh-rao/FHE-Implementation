@@ -16,3 +16,5 @@ sudo docker build -t encrypted-operations .
 ```bash
 sudo docker run -d -p 1221:1221 --rm encrypted-operations
 ```
+
+For the detailed writeup for this project refer the [blog post](https://vishvesh-rao.github.io/posts/Encrypted-Operations-InCTFi21/)
